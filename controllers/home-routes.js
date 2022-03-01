@@ -41,4 +41,9 @@ router.get('/', (req, res) => {
     });
 });
 
+// GET login handlebar page
+router.get('/login', (req, res) => {
+  res.render('login');
+});
+
 module.exports = router;
