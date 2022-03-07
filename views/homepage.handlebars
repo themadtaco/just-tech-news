@@ -1,0 +1,9 @@
+<ol class="post-list">
+  {{!-- begins the loop and declares a variable name  --}}
+  {{#each posts as |post|}}
+  <li>
+    {{!-- uses a partial with >, first argument is the file, second is the object --}}
+    {{> post-info post}}
+  </li>
+  {{/each}}
+</ol>
